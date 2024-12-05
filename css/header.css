@@ -1,0 +1,77 @@
+:root {
+    --primary-color: #212529;
+    --secondary-color: white;
+    --tertiary-color: rgb(183, 182, 167);
+    --accent-color: #802bb1;
+    --my-color: #2d283e;
+}
+
+.header {
+    color: hsla(0, 0%, 0%, 0.29);
+    overflow-y: auto;
+    width: 300px;
+    position: fixed;
+    padding: 15px;
+    height: 100vh;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.401);
+}
+
+.header .profile-img img {
+    width: 180px;
+    margin: 15px auto;
+    border: 8px solid hsla(0, 0%, 0%, 0.29);
+}
+
+.header .profile-img h1 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+.header a {
+    text-decoration: none;
+}
+
+.navmenu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navmenu .nav-item a {
+    color: var(--secondary-color);
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.navmenu .nav-item a i {
+    margin-right: 5px;
+}
+
+.navmenu .nav-link.active {
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+.navmenu .nav-link:hover {
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    color: var(--tertiary-color);
+    margin: 0 5px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.social-links a:hover {
+    color: var(--secondary-color);
+    background: var(--accent-color);
+}

@@ -1,0 +1,181 @@
+:root {
+    --primary-color: #212529;
+    --secondary-color: white;
+    --tertiary-color: rgb(183, 182, 167);
+    --accent-color: #802bb1;
+    --my-color: #2d283e;
+}
+.header {
+    color: hsla(0, 0%, 0%, 0.29);
+    overflow-y: auto;
+    width: 300px;
+    position: fixed;
+    padding: 15px;
+    height: 100vh;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.401);
+}
+
+.header .profile-img img {
+    width: 180px;
+    margin: 15px auto;
+    border: 8px solid hsla(0, 0%, 0%, 0.29);
+}
+
+.header .profile-img h1 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+.header a {
+    text-decoration: none;
+}
+
+.navmenu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navmenu .nav-item a {
+    color: var(--secondary-color);
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.navmenu .nav-item a i {
+    margin-right: 5px;
+}
+
+.navmenu .nav-link.active {
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+.navmenu .nav-link:hover {
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    color: var(--tertiary-color);
+    margin: 0 5px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.social-links a:hover {
+    color: var(--secondary-color);
+    background: var(--accent-color);
+}
+.portfolio{
+  margin-left: 300px;
+  margin-top: -25px;
+  display: inline-block;
+  background-color: var(--my-color);
+  padding-top: 60px;
+  height: 100vh;
+  
+  
+}
+.portfolio button{
+    background-color: rgba(0, 255, 255, 0);
+}
+.portfolio h1{
+    font-weight: 700;
+    text-align: center; 
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 5px; 
+    font-size: 40px;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive column width */
+  background-color: var(--my-color);
+  gap: 30px;
+  padding: 80px;
+  margin-top: -60px;
+}
+.card-container p{
+    color: white;
+    font-size: 15px;
+    text-align: left;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.card-container button:hover{
+  background-color: var(--my-color);
+}
+
+
+.card-websites, .card-application, .card-game {
+  background-color: hsla(0, 0%, 100%, 0); 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%; /* Make it responsive */
+}
+
+.card-websites:hover, .card-application:hover, .card-game:hover {
+  transform: scale(1.05);
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 15px;
+  text-align: center;
+  
+}
+.card-body .btn-primary {
+    margin-bottom: 15px;
+}
+.card-body h1{
+    font-size: 27px;
+    padding: 10px;
+}
+
+.card-text {
+  font-size: 1.5rem; /* Adjust font size for smaller screens */
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.filter-btn {
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background-color: #0056b3;
+}
+.modal-footer button{
+  color: var(--accent-color);
+}
+
+.modal-body h1{
+  color: black;
+}

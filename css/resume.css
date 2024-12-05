@@ -1,0 +1,120 @@
+:root {
+    --primary-color: #212529;
+    --secondary-color: white;
+    --tertiary-color: rgb(183, 182, 167);
+    --accent-color: #802bb1;
+    --my-color: #2d283e;
+}
+
+.mainbody {
+    margin-top: 0px;
+    margin-left: 300px;
+    background: var(--my-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    padding: 20px; 
+}
+.mainbody h1 {
+    text-align: center;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+    width: 100%;
+    margin: 0 auto; /* Center-aligns the box */
+    font-size: 55px; /* Adjust the text size here */
+    letter-spacing: 20px; /* Adjust the letter spacing here */
+}
+.mainbody h2{
+    font-weight: 700;
+    text-align: center; 
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 5px; 
+    font-size: 40px;
+    color: var(--secondary-color);
+}
+.mainbody .timeline ul{
+    list-style: none;
+}
+.mainbody p{
+    color: var(--secondary-color);
+}
+.timeline-item  {
+    border-radius: 10px; /* Rounded corners */
+    padding: 15px; /* Space inside the box */
+    padding-top: 25px;
+    margin: auto;
+    margin-bottom: 20px; /* Space between items */
+    max-width: 500px; /* Center the boxes and limit their width */
+    background-color: var(--primary-color); /* Light background */
+    text-align: center; /* Align text inside the box */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.348); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover animation */
+}
+.timeline-item:hover {
+  transform: scale(1.05); /* Slightly enlarge the box */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Enhance shadow effect */
+  background-color: var(--accent-color); /* Optional: Light blue background on hover */
+}
+.timeline h3{
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+.timeline p{
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+.card-container {
+    display: flex; /* Use flexbox for alignment */
+    flex-wrap: wrap; /* Allow wrapping to new rows when necessary */
+    gap: 10px; /* Add spacing between cards */
+    justify-content: center; /* Center-align cards */
+    border-radius: 10px;
+    width: 80%;
+    margin: auto;
+    padding-top: 20px;
+    background-color: hsla(0, 0%, 100%, 0.026);
+    box-shadow: 0 4px 10px hsla(0, 0%, 0%, 0.499);
+    margin-bottom: 50px;
+}
+.card-container h1{
+    color: rgba(255, 255, 255, 0.844);
+    font-weight: 700;
+}
+.card-dept {
+    flex: 0 1 200px; /* Ensure consistent width for cards */
+    text-align: center;
+    vertical-align: top;
+    width: 200px; /* Adjust the width of the card */
+    margin: 10px; /* Add spacing between cards */
+    display: inline-block; /* Align cards inline */
+}
+
+.card-dept img {
+    width: 100px; /* Make images smaller */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Add spacing below images */
+}
+
+.card-dept .card-body {
+    padding: 10px; /* Reduce padding inside cards */
+}
+
+.card-dept .btn {
+    font-size: 12px; /* Reduce button font size */
+    padding: 5px 10px; /* Adjust button padding */
+}
+.certifications button{
+    background-color: var(--primary-color);
+    border: none;
+}
+.certifications button:hover{
+    background-color: var(--accent-color);
+}
+.modal-body p{
+    color: black;
+}
+.modal-body img{
+    width: 80%;
+    margin-bottom: 0px;
+}

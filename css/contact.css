@@ -1,0 +1,121 @@
+:root {
+    --primary-color: #212529;
+    --secondary-color: white;
+    --tertiary-color: rgb(183, 182, 167);
+    --accent-color: #802bb1;
+    --my-color: #2d283e;
+    --contrast-color: white;
+    --default-color: #333;
+    --surface-color: #f9f9f9;
+}
+
+.contact {
+    background-color: var(--my-color);
+    margin-left: 300px;
+    height: 100vh;
+
+}
+.container{
+    display: flex; /* Enable flexbox */
+    padding-top: 50px;
+    gap: 30px; /* Add spacing between elements */
+    justify-content: center; /* Centers items horizontally */
+}
+.contact .info-wrap {
+    flex: 1; /* Allow the info card to take up available space */
+    width: auto; /* Ensure it doesn't get too wide */
+    background-color: var(--secondary-color);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.45);
+    border-radius: 8px;
+    padding: 30px;
+    height: 600px;
+    margin-left: auto;
+}
+.contact .info-wrap iframe{
+    margin-top: 80px;
+    width: auto;
+}
+
+.contact .info-item {
+    margin-bottom: 40px;
+}
+
+.contact .info-item i {
+    font-size: 20px;
+    color: var(--accent-color);
+    background: color-mix(in srgb, var(--accent-color), transparent 92%);
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+    margin-right: 15px;
+}
+
+.contact .info-item h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.contact .info-item p {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.contact .info-item:hover i {
+    background: var(--accent-color);
+    color: var(--contrast-color);
+}
+
+
+
+.contact .php-email-form input[type="text"],
+.contact .php-email-form input[type="email"],
+.contact .php-email-form textarea {
+    font-size: 14px;
+    padding: 10px 15px;
+    border-radius: 0;
+    color: var(--default-color);
+    background-color: var(--surface-color);
+    border: 1px solid color-mix(in srgb, var(--default-color), transparent 80%);
+}
+
+.contact .php-email-form input[type="text"]:focus,
+.contact .php-email-form input[type="email"]:focus,
+.contact .php-email-form textarea:focus {
+    border-color: var(--accent-color);
+}
+
+.contact .php-email-form input[type="text"]::placeholder,
+.contact .php-email-form input[type="email"]::placeholder,
+.contact .php-email-form textarea::placeholder {
+    color: color-mix(in srgb, var(--default-color), transparent 70%);
+}
+
+.contact .php-email-form button[type="submit"] {
+    color: var(--contrast-color);
+    background: var(--accent-color);
+    border: 0;
+    padding: 10px 30px;
+    transition: 0.4s;
+    border-radius: 50px;
+    font-weight: 600;
+}
+
+.contact .php-email-form button[type="submit"]:hover {
+    background: color-mix(in srgb, var(--accent-color), transparent 25%);
+}
+
+.container-form {
+    flex: 1; /* Allow the info card to take up available space */
+    max-width: 700px; /* Ensure it doesn't get too wide */
+    background-color: var(--secondary-color);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.45);
+    border-radius: 8px;
+    padding: 30px;
+    height: 600px;
+}
+
