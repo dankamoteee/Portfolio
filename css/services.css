@@ -63,11 +63,11 @@ body {
 /* Card Styles */
 .card {
   max-width: 300px; /* Set a fixed width for compact cards */
-  margin: auto; /* Reduce margin for compact spacing */
   border-radius: 10px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.362);
   overflow: hidden;
   transition: transform 0.2s, box-shadow 0.2s;  
+  margin: auto; /* Reduce margin for compact spacing */
 }
 
 .card:hover {
