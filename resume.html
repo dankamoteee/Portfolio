@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="icon" href="images/Obedoza_Logo.png">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/resume.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header" class="header bg-dark d-flex flex-column">
+        <div class="profile-img text-center">
+            <img src="images/DSC_0280.JPG" alt="Profile" class="img-fluid rounded-circle">
+            <h1>Justin Obedoza</h1>
+        </div>
+
+        <!-- Social Links -->
+        <div class="social-links text-center">
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="youtube"><i class="bi bi-youtube"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav id="navmenu" class="navmenu">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"><i class="bi bi-house-door-fill"></i>Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutme.html"><i class="bi bi-person-circle"></i>About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="resume.html"><i class="bi bi-file-earmark-person-fill"></i>Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html"><i class="bi bi-envelope-paper-fill"></i>Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html"><i class="bi bi-person-raised-hand"></i>Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link"href="contact.html"><i class="bi bi-person"></i>Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="mainbody">
+        <h1><strong>RESUME</strong></h1>
+        <h2>EDUCATIONAL BACKGROUND</h2>
+        <section class="timeline">
+            <ul style="text-align: center; margin-top: 20px;">
+              <li>
+                <div class="timeline-item">
+                  <h3>Tadian Central School</h3>
+                  <p class="details">
+                    Poblacion, Tadian, Mountain Province<br>
+                    2008-2014</p>
+                </div>
+              </li>
+              <li>
+                <div class="timeline-item">
+                  <h3>Tadian School of Arts and Trades</h3>
+                  <p class="details">
+                    Junior High School <br>
+                    TecVoc-Electrical Installation and Maintenance <br>
+                    Poblacion, Tadian, Mountain Province<br>
+                    2014-2018</p>
+                </div>
+              </li>
+              <li>
+                <div class="timeline-item">
+                  <h3>Tadian School of Arts and Trades</h3>
+                  <p class="details">
+                    Senior High School <br>
+                    STRAND: TecVoc-Computer System Servicing <br>
+                    Poblacion, Tadian, Mountain Province<br>
+                    2018-2020</p>
+                </div>
+              </li>
+              <li>
+                <div class="timeline-item">
+                  <h3>Mountain Province State University</h3>
+                  <p class="details">
+                    Poblacion, Bontoc, Mountain Province <br>
+                    Bachelor of Science in Information Technology <br>
+                    2022-2026</p>
+                </div>
+              </li>
+            </ul>
+        </section>
+        <section class="certifications">
+            <h2 style="text-align: center;">Certifications and Awards</h2>
+            <p class="text-center">Showcasing certifications and awards! Enjoy browsing!</p>
+            <div class="text-center mb-4">
+              <button class="btn btn-primary filter-btn" data-category="all">All</button>
+              <button class="btn btn-secondary filter-btn" data-category="dept">Academic</button>
+              <button class="btn btn-success filter-btn" data-category="extra">Other Certifications</button>
+            </div>
+            <!-- PROJECTS -->
+            <div class="card-container text-center">
+                <div class="card-dept" data-category="dept">
+                    <img src="images/deans.webp" class="card-img-top" alt="Project Image">
+                    <div class="card-body">
+                      <h1 class="card-text" style="font-size: 15px; letter-spacing: 0px;"> Dean's Lister</h1>
+                      <p>Awarded for achieving high academic standings and is recognized for having a 89-92 GWA.</p>
+                      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-dean">View Details</button>
+                    </div>
+                </div>
+                <div class="card-dept" data-category="extra">
+                    <img src="images/aws.png" class="card-img-top" alt="Project Image">
+                    <div class="card-body">
+                      <h1 class="card-text" style="font-size: 15px; letter-spacing: 0px;"> AWS Certified Cloud Practitioner </h1>
+                      <p>A foundational certification validating knowledge of cloud concepts, AWS services, and architecture.</p>
+                      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-aws">View Details</button>
+                    </div>
+                </div>
+                <div class="card-dept" data-category="extra">
+                    <img src="images/cisco.png" class="card-img-top" alt="Project Image">
+                    <div class="card-body">
+                      <h1 class="card-text" style="font-size: 15px; letter-spacing: 0px;">Cisco Certified Network Associate (CCNA)</h1>
+                      <p>The CCNA certification is an associate-level certification that covers the fundamentals of IT networking issues.</p>
+                      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-club">View Details</button>
+                    </div>
+                </div>
+                
+                <div class="card-dept" data-category="extra">
+                    <img src="images/adobe.jpg" class="card-img-top" alt="Project Image">
+                    <div class="card-body">
+                      <h1 class="card-text" style="font-size: 15px; letter-spacing: 0px;"> Adobe Certified Professional      </h1>
+                      <p>Validates skills in Adobe tools like Photoshop or Illustrator for creative design.      </p>
+                      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-adobe">View Details</button>
+                    </div>
+                </div>
+    
+                <!-- MODAL -->
+                <div class="modal fade" id="modal-aws" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg"> 
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title">AWS Certified Cloud Practitioner</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="images/aws.png" class="img-fluid" alt="">
+                          <p>This entry-level certification demonstrates your understanding of fundamental cloud computing concepts and how AWS services enable cloud solutions. It covers key topics such as AWS architecture, billing, pricing models, and basic security practices. Ideal for students or professionals starting their journey in cloud technology, it requires no prior technical experience and provides a strong foundation for more advanced AWS certifications. Benefits: Recognized globally, it opens doors to cloud-related internships and jobs.</p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                  
+                <div class="modal fade" id="modal-dean" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg"> 
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title">Dean's Lister</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="images/deans.webp" class="img-fluid" alt="">   
+                          <p>This academic recognition is awarded to students who achieve exemplary grades within a specific term or academic year. Requirements often include maintaining a high GPA (e.g., 3.5 or above on a 4.0 scale) and being in good standing with the institution. Being a consistent Dean’s or President’s Lister not only reflects dedication and hard work but also distinguishes you as an achiever among your peers. Benefits: It strengthens your resume and portfolio, especially for competitive opportunities like internships and scholarships.</p> 
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                  
+                <div class="modal fade" id="modal-club" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg"> 
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title">Cisco Certified Network Associate (CCNA)</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="images/cisco.png" class="img-fluid" alt="">   
+                          <p>The CCNA certification is an associate-level certification that covers the fundamentals of IT networking issues. This includes network access, IP connectivity, and IP services. Though it’s not a vendor neutral certification—meaning it’ll test you exclusively on Cisco products and tools—it’s popular among network professionals because of Cisco’s dominance in the networking market. One exam is required to get the CCNA certification.</p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                  
+                <div class="modal fade" id="modal-adobe" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg"> 
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title">Adobe Certified Professional</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="images/adobe.jpg" class="img-fluid" alt="">    
+                          <p>This certification validates your expertise in Adobe software such as Photoshop, Illustrator, or Premiere Pro, showcasing your ability to create professional-quality designs, videos, or digital assets. The certification process typically involves completing a project-based exam that tests your ability to use specific tools, features, and workflows. Benefits: It is a sought-after credential in creative industries, enhancing your credibility as a graphic designer or content creator. It can also lead to freelance or full-time opportunities in digital design.</p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <!-- Add more cards as needed -->
+            </div>
+            
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="js/typed.js/resume.js"></script>
+</body>
+</html>

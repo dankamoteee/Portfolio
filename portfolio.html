@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" href="images/Obedoza_Logo.png">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header" class="header bg-dark d-flex flex-column">
+        <div class="profile-img text-center">
+            <img src="images/DSC_0280.JPG" alt="Profile" class="img-fluid rounded-circle">
+            <h1>Justin Obedoza</h1>
+        </div>
+
+        <!-- Social Links -->
+        <div class="social-links text-center">
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="youtube"><i class="bi bi-youtube"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav id="navmenu" class="navmenu">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"><i class="bi bi-house-door-fill"></i>Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutme.html"><i class="bi bi-person-circle"></i>About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="resume.html"><i class="bi bi-file-earmark-person-fill"></i>Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="portfolio.html"><i class="bi bi-envelope-paper-fill"></i>Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html"><i class="bi bi-person-raised-hand"></i>Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link"href="contact.html  "><i class="bi bi-person"></i>Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+<div class="portfolio">
+  <h1 class="text-center mt-4">MY PORTFOLIO</h1>
+
+    <div class="text-center mb-4">
+        <button class="btn btn-primary filter-btn" data-category="all">All</button>
+        <button class="btn btn-secondary filter-btn" data-category="website">Websites</button>
+        <button class="btn btn-success filter-btn" data-category="apps">Applications</button>
+        <button class="btn btn-primary filter-btn" data-category="games">Games</button>
+    </div>
+
+<div class="card-container">
+    <div class="card-websites" data-category="website">
+        <img src="images/amazon.webp" class="card-img-top" alt="Amazon Project Image">
+        <div class="card-body">
+            <h1 class="card-text">Amazon</h1>
+            <p>An e-commerce platform offering a vast selection of products, fast delivery, and customer services worldwide.</p>
+            <p>Role: Front-end developer focused on product pages and user interface optimization.</p>
+            <p>React, Redux, Node.js, AWS, Bootstrap</p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-amazon">View Details</button>
+        </div>
+    </div>
+    <div class="card-application" data-category="apps">
+        <img src="images/whats.jpg" class="card-img-top" alt="WhatsApp Project Image">
+        <div class="card-body">
+            <h1 class="card-text">WhatsApp</h1>
+            <p>A messaging application offering real-time chat, voice, and video calls with end-to-end encryption.</p>
+            <p>Role: Implemented UI/UX enhancements for the chat and group messaging features.</p>
+            <p>React Native, Firebase, Socket.IO, MongoDB</p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-whatsapp">View Details</button>
+        </div>
+    </div>
+    <div class="card-game" data-category="games">
+        <img src="images/fortnite.webp" class="card-img-top" alt="Fortnite Project Image">
+        <div class="card-body">
+            <h1 class="card-text">Fortnite</h1>
+            <p>A battle royale game where players compete in a shrinking battlefield to be the last one standing.</p>
+            <p>Role: Developed game mechanics and optimized network performance for smoother gameplay.</p>
+            <p>Unreal Engine, C++, AWS GameLift</p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-fortnite">View Details</button>
+        </div>
+    </div>
+    <div class="card-websites" data-category="website">
+        <img src="images/yt.jpg" class="card-img-top" alt="YouTube Project Image">
+        <div class="card-body">
+            <h1 class="card-text">YouTube</h1>
+            <p>A video-sharing platform where users can upload, view, and interact with videos from creators worldwide.</p>
+            <p>Role: Worked on the algorithm for personalized video recommendations.</p>
+            <p>Angular, Node.js, Python, TensorFlow</p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-youtube">View Details</button>
+        </div>
+    </div>
+    
+    <div class="card-application" data-category="apps">
+        <img src="images/application2.jpg" class="card-img-top" alt="Project Image">
+        <div class="card-body">
+          <h1 class="card-text">Netflix</h1>
+          <p>A video streaming app allowing users to browse, watch, and receive recommendations for movies and series.</p>
+          <p>Role: Full-stack developer, responsible for UI design, video playback, and recommendation features.</p>
+          <p>React, Node.js, MongoDB, AWS S3, Firebase</p>
+          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-7">View Details</button>
+        </div>
+    </div>
+    <div class="card-application" data-category="apps">
+        <img src="images/insta.webp" class="card-img-top" alt="Instagram Project Image">
+        <div class="card-body">
+            <h1 class="card-text">Instagram</h1>
+            <p>A social networking app for sharing photos, videos, and real-time stories with followers.</p>
+            <p>Role: Improved photo editing features and introduced the Reels format.</p>
+            <p>React Native, Firebase, AWS S3, GraphQL</p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-instagram">View Details</button>
+        </div>
+    </div>
+    <div class="card-game" data-category="games">
+        <img src="images/minecraft.jpg" class="card-img-top" alt="Minecraft Project Image">
+        <div class="card-body">
+            <h1 class="card-text">Minecraft</h1>
+            <p>A sandbox game that allows players to build, explore, and survive in an open-world environment.</p>
+            <p>Role: Designed custom biomes and enhanced block physics.</p>
+            <p>Java, C++, OpenGL</p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-minecraft">View Details</button>
+        </div>
+    </div>
+    
+    <div class="card-application" data-category="apps">
+        <img src="images/application3.png" class="card-img-top" alt="Project Image">
+        <div class="card-body">
+          <h1 class="card-text">Spotify</h1>
+          <p>A music streaming app with search, playlist creation, and personalized recommendations.</p>
+          <p>Role: Front-end developer, focused on UI, real-time search, and playlist management.</p>
+          <p>React, Redux, Spotify API, Node.js, Firebase</p>
+          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-8">View Details</button>
+        </div>
+    </div>
+    
+      
+    <div class="card-application" data-category="apps">
+        <img src="images/uber.webp" class="card-img-top" alt="Project Image">
+        <div class="card-body">
+          <h1 class="card-text">Uber</h1>
+          <p>A ride-hailing app for booking rides, real-time tracking, and secure payments.</p>
+          <p>Role: Lead developer, implemented location tracking, route optimization, and payment integration.</p>
+          <p>React Native, Google Maps API, Firebase, Stripe API, Node.js</p>
+          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-9">View Details</button>
+        </div>
+    </div>
+</div>
+
+
+<!-- MODAL -->
+<div class="modal fade" id="modal-amazon" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Amazon Website</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="images/amazon.webp" class="img-fluid" alt="Amazon Project Image">
+                <h1>Amazon</h1>
+                <div class="text-center">
+                    <a href="https://www.amazon.com" target="_blank">Visit Amazon</a>
+                </div>
+                <hr>
+                <h5>Description:</h5>
+                <p>Amazon is the leading global e-commerce platform offering millions of products with fast delivery options. Its user-friendly interface, secure payment system, and personalized recommendations make shopping convenient and enjoyable.</p>
+                <h5>Role in the Project:</h5>
+                <p>As a front-end developer, I worked on optimizing the user interface for product detail pages, ensuring responsiveness and enhancing the customer experience.</p>
+                <h5>Tools/Technologies Used:</h5>
+                <p>
+                    React, Redux, Node.js, AWS (for cloud infrastructure), Bootstrap, GitHub
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="modal fade" id="modal-whatsapp" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">WhatsApp Application</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="images/whats.jpg" class="img-fluid" alt="WhatsApp Project Image">
+                <h1>WhatsApp</h1>
+                <div class="text-center">
+                    <a href="https://www.whatsapp.com" target="_blank">Visit WhatsApp</a>
+                </div>
+                <hr>
+                <h5>Description:</h5>
+                <p>WhatsApp is a popular messaging app that allows users to send texts, make voice and video calls, and share media files—all with end-to-end encryption for privacy.</p>
+                <h5>Role in the Project:</h5>
+                <p>I contributed to enhancing the chat and group messaging features, focusing on creating a seamless user experience.</p>
+                <h5>Tools/Technologies Used:</h5>
+                <p>
+                    React Native, Firebase (for authentication and real-time database), Socket.IO, MongoDB, GitHub
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="modal-fortnite" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Fortnite Game</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="images/fortnite.webp" class="img-fluid" alt="Fortnite Project Image">
+                <h1>Fortnite</h1>
+                <div class="text-center">
+                    <a href="https://www.epicgames.com/fortnite/en-US/home" target="_blank">Visit Fortnite</a>
+                </div>
+                <hr>
+                <h5>Description:</h5>
+                <p>Fortnite is a battle royale game that combines building mechanics, intense combat, and a colorful open world to deliver an engaging multiplayer experience.</p>
+                <h5>Role in the Project:</h5>
+                <p>I optimized gameplay mechanics and improved network performance, ensuring smooth multiplayer interactions.</p>
+                <h5>Tools/Technologies Used:</h5>
+                <p>
+                    Unreal Engine, C++, AWS GameLift (for matchmaking and server hosting), GitHub
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="modal-youtube" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">YouTube Website</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="images/yt.jpg" class="img-fluid" alt="YouTube Project Image">
+                <h1>YouTube</h1>
+                <div class="text-center">
+                    <a href="https://www.youtube.com" target="_blank">Visit YouTube</a>
+                </div>
+                <hr>
+                <h5>Description:</h5>
+                <p>YouTube is the world’s largest video-sharing platform where users can upload, watch, and engage with content ranging from entertainment to education.</p>
+                <h5>Role in the Project:</h5>
+                <p>I contributed to the recommendation system, improving personalized video suggestions for users based on their watch history.</p>
+                <h5>Tools/Technologies Used:</h5>
+                <p>
+                    Angular, Node.js, Python, TensorFlow (for machine learning algorithms), GitHub
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="modal-instagram" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Instagram Application</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="images/insta.webp" class="img-fluid" alt="Instagram Project Image">
+                <h1>Instagram</h1>
+                <div class="text-center">
+                    <a href="https://www.instagram.com" target="_blank">Visit Instagram</a>
+                </div>
+                <hr>
+                <h5>Description:</h5>
+                <p>Instagram is a popular social media platform where users share photos, videos, and stories, with tools for creating and discovering visual content.</p>
+                <h5>Role in the Project:</h5>
+                <p>I worked on enhancing the photo editing tools and implementing the Reels feature for short video sharing.</p>
+                <h5>Tools/Technologies Used:</h5>
+                <p>
+                    React Native, Firebase (for data storage and authentication), AWS S3, GraphQL, GitHub
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="modal-minecraft" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Minecraft Game</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="images/minecraft.jpg" class="img-fluid" alt="Minecraft Project Image">
+                <h1>Minecraft</h1>
+                <div class="text-center">
+                    <a href="https://www.minecraft.net" target="_blank">Visit Minecraft</a>
+                </div>
+                <hr>
+                <h5>Description:</h5>
+                <p>Minecraft is an open-world sandbox game where players can build, explore, and survive in infinite procedurally-generated worlds.</p>
+                <h5>Role in the Project:</h5>
+                <p>I designed custom biomes, improved terrain generation, and worked on optimizing block physics for smoother gameplay.</p>
+                <h5>Tools/Technologies Used:</h5>
+                <p>
+                    Java, C++, OpenGL (for rendering), GitHub
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-7" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg"> 
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title">Netflix Application</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <img src="images/application2.jpg" class="img-fluid" alt="Lifestyle Fitness Gym Website Image">
+        <h1>Netflix</h1>
+        <div class="text-center">
+            <a href="https://www.example.com" target="_blank">Visit Netflix</a>
+        </div> 
+        <hr>
+            <h5>Description:</h5>
+            <p>A comprehensive video streaming platform similar to Netflix that allows users to browse a catalog of movies and TV shows, receive personalized recommendations, and play HD video content. The app includes features such as genre sorting, search functionality, and user profile management, providing a smooth and immersive viewing experience across devices.</p>
+            <h5>Role in the Project:</h5>
+            <p>As a full-stack developer, I was responsible for designing the responsive user interface, implementing the video playback and buffering logic, and creating a recommendation algorithm that suggests content based on user watch history and preferences. I also worked on integrating account management features with Firebase for authentication, enabling users to create, update, and secure their profiles.</p>
+            <h5>Tools/Technologies Used:</h5>
+            <p>
+            React (for the front-end interface), Node.js and Express (for the back-end server), MongoDB (for data storage), AWS S3 (for storing video content), and Firebase Authentication (for managing secure logins and user profiles).
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-8" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg"> 
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title">Spotify Application</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <img src="images/application3.png" class="img-fluid" alt="Lifestyle Fitness Gym Website Image">
+        <h1>Spotify</h1>
+        <div class="text-center">
+            <a href="https://www.example.com" target="_blank">Visit Spotify</a>
+        </div> 
+        <hr>
+            <h5>Description:</h5>
+            <p>A music streaming application modeled after Spotify, allowing users to discover and stream a vast collection of songs, create and share playlists, and follow their favorite artists. The app includes real-time search, curated playlists based on user history, and artist pages for a fully personalized experience.</p>
+            <h5>Role in the Project:</h5>
+            <p>As the front-end developer, I led the design of a clean and user-friendly interface, implementing real-time search and playlist management features. I collaborated with back-end developers to integrate the Spotify API, allowing access to real-time data and creating a smooth listening experience with responsive controls and a well-organized music library.</p>
+            <h5>Tools/Technologies Used:</h5>
+            <p>
+            React and Redux (for front-end state management), Firebase Authentication (for secure user logins), Spotify API (for music data and playlists), Node.js and MongoDB (for the back-end server and database), and CSS for custom styling and animations.
+            </p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-9" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg"> 
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title">Uber Application</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <img src="images/application1.jpg" class="img-fluid" alt="Lifestyle Fitness Gym Website Image">
+        <h1>Uber</h1>
+        <div class="text-center">
+            <a href="https://www.example.com" target="_blank">Visit Uber</a>
+        </div> 
+        <hr>
+            <h5>Description:</h5>
+            <p>A ride-hailing application that mirrors the Uber platform, enabling users to book rides, estimate fares, and track their driver’s location in real-time. The app provides a user-friendly map interface for both riders and drivers, as well as a ride history feature, secure payment integration, and route optimization for a reliable ride-booking experience.</p>
+            <h5>Role in the Project:</h5>
+            <p>As the lead developer, I implemented real-time location tracking with Google Maps API, developed a smooth route optimization feature, and integrated Stripe API for secure payments. I worked extensively on creating a seamless map interface, ensuring accurate driver and rider locations, and collaborated on back-end development for booking management and ride history.</p>
+            <h5>Tools/Technologies Used:</h5>
+            <p>
+            React Native (for mobile application development), Google Maps API (for real-time map tracking), Firebase (for authentication and real-time data storage), Stripe API (for payment processing), Node.js and Express (for the back-end), and MongoDB (for storing user and ride data).
+            </p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+<script src="js/typed.js/portfolio.js"></script>
+</body>
+</html>
